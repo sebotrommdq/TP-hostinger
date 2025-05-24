@@ -12,12 +12,15 @@ header{
     background-color: white;
     z-index: 100;
     width: 100%;
-}
+    }
 .container-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+
 }
 
 .nav-header{
@@ -51,6 +54,9 @@ header{
 
 a{
     text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 16px;
 }
 
 .flag-AR{
@@ -65,6 +71,26 @@ a{
     gap: 25px;
 }
 
+h2{
+    font-family: "DM Sans", sans-serif;
+    color: #ffffff;
+    font-weight: 650;
+    font-size: 36px;
+}
+
+.off{
+    font-family: "DM Sans", sans-serif;
+    color: #1f1346;
+    font-size: 20px;
+}
+
+.checklist{
+    font-family: "DM Sans", sans-serif;
+    color: #1f1346;
+    font-size: 16px;
+}
+
+
 .descuento{
     color: #1f1346;
     font-weight: 700;
@@ -72,8 +98,22 @@ a{
 }
 
 .price{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 650;
+    color: #2F1C6A;
+    font-family: "DM Sans", sans-serif;
+}
+
+.price-description{
+    font-family: "DM Sans", sans-serif;
+    color: #1f1346;
+    font-size: 16px;
+}
+
+.description{
+    font-family: "DM Sans", sans-serif;
+    color: #1f1346;
+    font-size: 16px;
 }
 
 .call-to-action{
@@ -86,21 +126,25 @@ a{
 }
 
 .get-started{
-    border: #1f1346;
+    border: #673DE6;
     border-radius: 10px;
     background-color: #1f1346;
-    padding: 10px;
+    padding: 12px 48px;
     color: white;
-    padding: 15 px 30px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .timer-countdown{
     border: #c5b8f8;
     border-radius: 10px;
     background-color: #c5b8f8;
-    padding: 10px;
+    padding: 12px 48px;
     color: #1f1346;
-    padding: 15 px 30px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .waratly{
@@ -124,11 +168,13 @@ li {
 }
 
 .card{
-    /*border: 1px solid black;*/
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
-    background-color: #7253ee
+    background-color:  #2F1C6A;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-size: 16px;
 }
 
 .card-container{
@@ -141,6 +187,7 @@ li {
     color: white;
     font-size: 16px;
     margin-bottom: 25px;
+    padding-top: 40px;
     
 }
 
@@ -153,6 +200,12 @@ li {
     text-align: center;
     background-color: #1f1346;
     color: white;
+}
+
+.brand{
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-size: 16px;
 }
 
 .social-media{
@@ -196,6 +249,17 @@ li {
     gap: 10px;
     
 }
+
+@media (width <= 1200px){
+    .container-header{
+        display: none;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+
+    }
+}
+
 @media (width <= 950px) {
     .container-hero{
         flex-direction: column;
