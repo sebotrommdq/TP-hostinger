@@ -6,20 +6,27 @@
     box-sizing: border-box;
 }
 
+*body{
+    width: 100vw;
+    height: 100vh;
+    
+}
 header{
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 100;
-    width: 100%;
-    }
+}
+
 .container-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 20px;
+    padding: 0px;;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
 
 }
 
@@ -68,12 +75,13 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
+    padding: 36px 0 96px;
 }
 
-h2{
+.big-title{
     font-family: "DM Sans", sans-serif;
-    color: #ffffff;
+    color: #2F1C6A;
     font-weight: 650;
     font-size: 36px;
 }
@@ -200,6 +208,9 @@ li {
     text-align: center;
     background-color: #1f1346;
     color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    
 }
 
 .brand{
@@ -269,6 +280,15 @@ li {
 
 @media (width <= 768px){
     .card-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (width <= 764px){
+    .call-to-action{
         flex-direction: column;
         align-items: center;
         gap: 10px;
