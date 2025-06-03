@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid 1px red
+    /*border: solid 1px red*/
 }
 
 
@@ -30,6 +30,7 @@ header{
     width: 100%;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
+    padding: 2% 2%;
 
 }
 
@@ -42,6 +43,17 @@ header{
     display: flex;
     gap: 30px;
     font-family: "DM Sans", sans-serif;
+}
+
+/*.h-svgo-icon{
+    width: 24px;
+    height: 24px;
+}*/
+
+.burger-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
 }
 
 .login-language{
@@ -78,7 +90,8 @@ a{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 36px 0 96px;
+    padding: 2% 0% 2% 0%;
+    width: 100%;    
 }
 
 .list-items{
@@ -89,11 +102,6 @@ a{
     width: 100%;
     display: flex;
 }
-
-
-/*.migration{
-    width: 100%;
-}*/
 
 .big-title{
     font-family: "DM Sans", sans-serif;
@@ -242,6 +250,7 @@ li {
     font-family: "DM Sans", sans-serif;
     color: white;
     font-size: 16px;
+    padding: 2% 2%;
 }
 
 .container-footer{
@@ -275,6 +284,12 @@ li {
     align-items: center;
     gap: 10px;
     max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.creditcards img{
+    width: 40px;
+    height: auto;
 }
 
 .legal-links{
@@ -297,12 +312,14 @@ li {
 }
 
 @media (width <= 1200px){
-    .container-header{
+    .nav-header{
         display: none;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+    }
+}
 
+@media (width <=1200px){
+    .login-language{
+        display: none;
     }
 }
 
