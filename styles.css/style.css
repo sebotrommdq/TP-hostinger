@@ -4,24 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 1px red
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
+
 header{
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 100;
-    width: 100vw;
+    width: 100vw
 }
 
 .container-hero-section{
     display: flex;
     justify-content: center;
-    width: 100vw; 
+    width: 100%; 
 }
 
 .container-header{
@@ -29,8 +27,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
-    padding: 0px;;
+    width: 100%;
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
 
@@ -38,7 +35,7 @@ header{
 
 .nav-header{
     color: black;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
 }
 
 .nav-list{
@@ -61,7 +58,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
 }
 
 a{
@@ -89,8 +86,14 @@ a{
 }
 
 .container-migration{
-    width: auto;
+    width: 100%;
+    display: flex;
 }
+
+
+/*.migration{
+    width: 100%;
+}*/
 
 .big-title{
     font-family: "DM Sans", sans-serif;
@@ -191,10 +194,6 @@ li {
     box-sizing: border-box;
 }
 
-.migration{
-    width: 100vw;
-}
-
 .card-container{
     display: flex;
     flex-direction: row;
@@ -204,7 +203,7 @@ li {
     background-color: #1f1346;
     color: white;
     font-size: 16px;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     flex-wrap: wrap;
     
@@ -218,9 +217,8 @@ li {
     font-family: "DM Sans", sans-serif;
     color: white;
     font-size: 16px;
-    width: 300px;
+    flex-basis: 300px;
     height: 256px;
-    padding: 50px 20px;
     text-align: start;
     max-width: 100%;
 }
@@ -236,7 +234,7 @@ li {
     color: white;
     font-family: "DM Sans", sans-serif;
     font-size: 36px;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -247,8 +245,7 @@ li {
 }
 
 .container-footer{
-    width: 100%;
-    margin: 0 auto;    
+    width: 100%; 
 }
 
 .social-media{
@@ -258,7 +255,8 @@ li {
     align-items: center;
     gap: 10px;
     padding-bottom: 30px;
-    width: 100vw;
+    width: 100%;
+    padding: 2% 2%;
 }
 
 .social-icons{
@@ -268,7 +266,7 @@ li {
 }
 
 .logo-footer{
-    padding-left: 29px;
+    max-width: 100%;
 }
 .creditcards{
     display: flex;
@@ -293,7 +291,8 @@ li {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
     
 }
 
